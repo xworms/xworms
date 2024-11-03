@@ -232,7 +232,7 @@ function spawnWorm(){
   var spd = 10;
   
   var worm = document.createElement("img");
-  worm.src = "worm.svg";
+  worm.src = "/img/worm.svg";
   var id = "bounceWorm"+Math.floor(Math.random()*1000);
   worm.setAttribute("id",id);
   worm.setAttribute("class","bounceWorm");
