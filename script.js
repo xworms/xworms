@@ -95,12 +95,14 @@ onmousemove = function(event){
     let ys = y+s;
     
     cursor2.style.transform = "translate("+x+"px,"+ys+"px)";
+    wormCursor.style.transform = "translate("+x+"px,"+ys+"px)";
   },120);
   setTimeout(function(){
     let cursor3 = document.getElementById("cursor3");
     let ys = y+s;
     
     cursor3.style.transform = "translate("+x+"px,"+ys+"px)";
+    wormCursor.style.transform = "translate("+x+"px,"+ys+"px)";
   },300);
   setTimeout(function(){
     let cursor4 = document.getElementById("cursor4");
