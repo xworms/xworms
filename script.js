@@ -112,13 +112,6 @@ onmousemove = function(event){
     
     cursor5.style.transform = "translate("+x+"px,"+ys+"px)";
   },500);
-
-  wormCursor.style.display = "initial";
-  wormX = wormCursor.style.transform;
-  wormX = wormX.substring(10,wormX.length-1);
-  wormY = parseInt(wormX.split(",")[1]);
-  wormX = parseInt(wormX.split(",")[0]);
-  wormCursor.style.transform = "translate("+(wormX+((x-wormX)/50))+"px,"+(wormY+((y-wormY)/50))+"px)";
 }
 
 let scrollFont = 0;
@@ -223,6 +216,13 @@ function scroll(){
   var scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
 
   sideWorm.style.rotate = scrollPos + "deg";
+
+  wormCursor.style.display = "initial";
+  wormX = wormCursor.style.transform;
+  wormX = wormX.substring(10,wormX.length-1);
+  wormY = parseInt(wormX.split(",")[1]);
+  wormX = parseInt(wormX.split(",")[0]);
+  wormCursor.style.transform = "translate("+(wormX+((x-wormX)/50))+"px,"+(wormY+((y-wormY)/50))+"px)";
 }
 
 
