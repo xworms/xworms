@@ -88,19 +88,21 @@ onmousemove = function(event){
   let ys = y+s;
   
   cursor1.style.transform = "translate("+x+"px,"+ys+"px)";
-  },100);
-  wormCursor.style.transform = "translate("+x+"px,"+ys+"px)";
+  }
+  wormCursor.style.transform = "translate("+x+"px,"+ys+"px)";,100);
   setTimeout(function(){
     let cursor2 = document.getElementById("cursor2");
     let ys = y+s;
     
     cursor2.style.transform = "translate("+x+"px,"+ys+"px)";
+    wormCursor.style.transform = "translate("+x+"px,"+ys+"px)";
   },120);
   setTimeout(function(){
     let cursor3 = document.getElementById("cursor3");
     let ys = y+s;
     
     cursor3.style.transform = "translate("+x+"px,"+ys+"px)";
+    wormCursor.style.transform = "translate("+x+"px,"+ys+"px)";
   },300);
   setTimeout(function(){
     let cursor4 = document.getElementById("cursor4");
