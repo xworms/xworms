@@ -27,7 +27,7 @@ function newWord(){
 
 window.onload = function(){
   shitten = ["dog.gif","rabbit.gif","bingle-dong-bingle.gif","ive-gone.gif","killer-fish-san-diego.gif","plink-wide-cat.gif","goatbigman.gif","livebitternreaction.gif","shoebill-bird.gif"];
-  shat.src = shitten[Math.floor(Math.random()*shitten.length)]
+  shat.src = "/img/" + shitten[Math.floor(Math.random()*shitten.length)]
   newWord();
 }
 
@@ -173,7 +173,7 @@ function time() {
   document.getElementById("tim").innerHTML = ('0'+h).slice(-2)+":"+('0'+m).slice(-2)+":"+('0'+s).slice(-2);
 
   var day = d.getDay();
-  var days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+  var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   var date = d.getDate().toString();
   if (date.slice(-1) == '1' && date != '11'){
     dateEnd = 'st';
@@ -187,7 +187,7 @@ function time() {
   else{
     dateEnd = 'th';
   }
-  document.getElementById("dat").innerHTML = days[day-1] + ' ' + date + dateEnd;
+  document.getElementById("dat").innerHTML = days[day] + ' ' + date + dateEnd;
 }
 //why do i have tot edo thsi again man what tht eghelll
 function tpTime() {
