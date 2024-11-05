@@ -75,7 +75,7 @@ onmousemove = function(event){
   let s = window.scrollY;
 
   let circleColor = 150+y*75/wy;
-  setTimeout(function(){
+  
   for (const circle of svg.children){
     circle.setAttribute("stroke","rgb("+circleColor+",0,"+circleColor+")");
     circle.setAttribute("stroke-width",x*16/wx+1);
@@ -89,32 +89,33 @@ onmousemove = function(event){
   
   cursor1.style.transform = "translate("+x+"px,"+ys+"px)";
   wormCursor1.style.transform = "translate("+x+"px,"+ys+"px)";
-  },100);
+
   setTimeout(function(){
     let cursor2 = document.getElementById("cursor2");
     let ys = y+s;
     
     cursor2.style.transform = "translate("+x+"px,"+ys+"px)";
-    wormCursor2.style.transform = "translate("+x+"px,"+ys+"px)";
-  },120);
+  },20);
   setTimeout(function(){
     let cursor3 = document.getElementById("cursor3");
     let ys = y+s;
     
     cursor3.style.transform = "translate("+x+"px,"+ys+"px)";
-    wormCursor3.style.transform = "translate("+x+"px,"+ys+"px)";
-  },300);
+    wormCursor2.style.transform = "translate("+x+"px,"+ys+"px)";
+  },200);
   setTimeout(function(){
     let cursor4 = document.getElementById("cursor4");
     let ys = y+s;
     cursor4.style.transform = "translate("+x+"px,"+ys+"px)";
-  },400);
+    wormCursor3.style.transform = "translate("+x+"px,"+ys+"px)";
+  },300);
   setTimeout(function(){
     let cursor5 = document.getElementById("cursor5");
     let ys = y+s;
     
     cursor5.style.transform = "translate("+x+"px,"+ys+"px)";
-  },500);
+    wormCursor4.style.transform = "translate("+x+"px,"+ys+"px)";
+  },400);
 }
 
 let scrollFont = 0;
