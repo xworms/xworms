@@ -88,7 +88,7 @@ onmousemove = function(event){
   let ys = y+s;
   
   cursor1.style.transform = "translate("+x+"px,"+ys+"px)";
-  wormCursor.style.transform = "translate("+x+"px,"+ys+"px)";
+  wormCursor1.style.transform = "translate("+x+"px,"+ys+"px)";
   },100);
   setTimeout(function(){
     let cursor2 = document.getElementById("cursor2");
