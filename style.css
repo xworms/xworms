@@ -12,6 +12,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'WingDings';
+  src: url('/fonts/wingding.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'MTF Memory';
   src: url('/fonts/MTF Memory.ttf') format('truetype');
   font-weight: normal;
