@@ -119,7 +119,7 @@ onmousemove = function(event){
 
 let scrollFont = 0;
 function font(){
-  let font = ['Play With Fire','Whitelisa','MTF Memory','Female Underwear','Sofia Sans'];
+  let font = ['Play With Fire','Whitelisa','WingDings','MTF Memory','Female Underwear','Sofia Sans'];
   document.body.style.fontFamily = '\''+font[scrollFont]+'\'';
   if (scrollFont == font.length-1){
     scrollFont = 0;
