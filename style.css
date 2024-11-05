@@ -43,7 +43,7 @@ body{
   margin: 0px;
   background: linear-gradient(180deg, #000 0%, #303 90%, #505 100%);
   font-family: 'Sofia Sans', sans-serif;
-  cursor: url('/img/worm.svg'),auto;
+  cursor: none;
 }
 body::-webkit-scrollbar{
   display: none;
