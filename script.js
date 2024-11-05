@@ -149,7 +149,6 @@ function move(direction){
   }
   p += direction;
   document.getElementById(p).style.transform = "translateX(-50%)";
-  console.log(p);
 }
 clear();
 move(1);
