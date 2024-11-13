@@ -50,9 +50,9 @@ body::-webkit-scrollbar{
 }
 
 divider{
-  transform: translateY(2px);
+  transform: translateY(-2px);
   height: 1.5vw;
-  border-left: 1px solid #fffa;
+  border-left: 2px solid #fff8;
   margin: 0.5vw;
 }
 
@@ -275,7 +275,8 @@ p{
 section{
   padding-top: 15px;
   padding-bottom: 60px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 3px solid #fff8;
+  border-radius: 2px;
 }
 @keyframes albania-virus {
   0% {transform: scale(1)}
@@ -428,7 +429,7 @@ canvas{
   }
   divider{
     width: 50%;
-    border-top: 1px solid #fffa;
+    border-top: 3px solid #fff8;
     border-left: 0px;
     margin: auto;
     margin-top: 10px;
