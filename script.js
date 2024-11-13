@@ -87,29 +87,27 @@ onmousemove = function(event){
   let cursor1 = document.getElementById("cursor1");
   let ys = y+s;
   
-  cursor1.style.transform = "translate("+x+"px,"+ys+"px)";
   cursor2.style.transform = "translate("+x+"px,"+ys+"px)";
   wormCursor1.style.transform = "translate("+x+"px,"+ys+"px)";
   setTimeout(function(){
-    // let cursor3 = document.getElementById("cursor3");
     let ys = y+s;
-    
+    cursor1.style.transform = "translate("+x+"px,"+ys+"px)";
+  },20)
+  setTimeout(function(){
+    let ys = y+s;
     cursor3.style.transform = "translate("+x+"px,"+ys+"px)";
     wormCursor2.style.transform = "translate("+x+"px,"+ys+"px)";
-  },200);
+  },150);
   setTimeout(function(){
-    let cursor4 = document.getElementById("cursor4");
     let ys = y+s;
     cursor4.style.transform = "translate("+x+"px,"+ys+"px)";
     wormCursor3.style.transform = "translate("+x+"px,"+ys+"px)";
-  },300);
+  },250);
   setTimeout(function(){
-    let cursor5 = document.getElementById("cursor5");
     let ys = y+s;
-    
     cursor5.style.transform = "translate("+x+"px,"+ys+"px)";
     wormCursor4.style.transform = "translate("+x+"px,"+ys+"px)";
-  },400);
+  },350);
 }
 
 let scrollFont = 0;
