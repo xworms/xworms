@@ -261,6 +261,7 @@ p{
 }
 .the{
   margin: 10vh 25vw;
+  margin-top: 0px;
   color: #ddd;
   text-align: center;
 }
@@ -426,6 +427,7 @@ canvas{
   }
   .the{
     margin: 10vh 10px;
+    margin-top: 0px;
   }
   divider{
     width: 50%;
