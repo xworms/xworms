@@ -83,7 +83,7 @@ onmousemove = function(event){
 
   document.getElementById("piss").style.filter = "grayscale("+y/wy+")";
   document.getElementById("shat").style.opacity = (y/wy)*0.1;
-  document.getElementById("shat").style.filter = "blur("+10-((y/wy)*10)+"px)";
+  document.getElementById("shat").style.filter = "blur("+10+"px)";
 
   let cursor1 = document.getElementById("cursor1");
   let ys = y+s;
