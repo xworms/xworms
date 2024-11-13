@@ -11,7 +11,7 @@ arraywotd = [
   "?",
   "unpa mije",
   "👽👽👽",
-  "June 12th 2048 01:46:23 AM EST J9V5+FW3, Niti Khand I, Indirapuram, Ghaziabad, Uttar Pradesh 201014, India.",
+  "Oh boy I can't wait to enjoy a peaceful day on June 12th 2048 01:46:23AM EST when a large meteor won't crash into central asia, creating a continent-sized crater and covering the earth in toxic dust, shrouding the planet into darkness and causing the extinction of all major lifeforms in the process!",
   "The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively",
 ];
 
@@ -88,16 +88,10 @@ onmousemove = function(event){
   let ys = y+s;
   
   cursor1.style.transform = "translate("+x+"px,"+ys+"px)";
+  cursor2.style.transform = "translate("+x+"px,"+ys+"px)";
   wormCursor1.style.transform = "translate("+x+"px,"+ys+"px)";
-
   setTimeout(function(){
-    let cursor2 = document.getElementById("cursor2");
-    let ys = y+s;
-    
-    cursor2.style.transform = "translate("+x+"px,"+ys+"px)";
-  },20);
-  setTimeout(function(){
-    let cursor3 = document.getElementById("cursor3");
+    // let cursor3 = document.getElementById("cursor3");
     let ys = y+s;
     
     cursor3.style.transform = "translate("+x+"px,"+ys+"px)";
